@@ -5,7 +5,7 @@ const uri = "mongodb://0.0.0.0:27017";
 const client = new MongoClient(uri);
 
 // replace the "demo" apikey below with your own key from https://www.alphavantage.co/support/#api-key
-var url = 'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=IBM&apikey=redundantorigin';
+var url = 'redundantorigin';
 
 request.get({
     url: url,
@@ -17,7 +17,9 @@ request.get({
     } else if (res.statusCode !== 200) {
       console.log('Status:', res.statusCode);
     } else {
+        var dates = ["2001-01-31", "2001-02-28", "2001-03-31", "2001-04-31", "2001-05-31", "2001-06-31", "2001-07-31", "2001-08-31", "2001-09-31", "2001-10-31"]
         let i = 0;
+        let ind = 0;
 
         while(i < 10){
             delay(i);
@@ -27,7 +29,7 @@ request.get({
         function delay(i){
             setTimeout(() => {
                 run();
-            }, 60000 * i);
+            }, 50000 * i);
         }
         
         async function run() {
