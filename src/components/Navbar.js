@@ -92,10 +92,20 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/"
+                to="/lobby"
                 onClick={() => updateExpanded(false)}
               >
                 <span className="purple"> <b>PLAY!</b> </span>
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/simulation"
+                onClick={() => updateExpanded(false)}
+              >
+                <span className="purple"> <b>Simulator</b> </span>
               </Nav.Link>
             </Nav.Item>
           </Nav>

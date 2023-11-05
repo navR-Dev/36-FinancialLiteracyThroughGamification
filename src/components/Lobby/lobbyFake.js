@@ -31,7 +31,9 @@ const Lobby = () => {
 
   return (
     <Container>
-      <h2>Lobby</h2>
+      <div>
+        
+      <h2>Lobby</h2><br/>
       <div style={{ display: 'flex', alignItems: 'center' }}>
         {players.length < 4 && !startGame && (
           <button onClick={() => setShowForm(true)}>Join Lobby</button>
@@ -55,6 +57,7 @@ const Lobby = () => {
         <button onClick={handleStartGame}>Start Game</button>
       )}
       {startGame}
+      </div>
     </Container>
   );
 };

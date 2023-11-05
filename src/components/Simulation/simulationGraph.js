@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
 import {
   LineChart,
   Line,
@@ -74,6 +75,8 @@ const SG = () => {
   };
 
   return (
+    <Container>
+      
     <div className="app-container">
       <h1>Stock Market Simulator</h1>
       {currentData && (
@@ -137,6 +140,7 @@ const SG = () => {
         ))}
       </LineChart>
     </div>
+    </Container>
   );
 };
 
