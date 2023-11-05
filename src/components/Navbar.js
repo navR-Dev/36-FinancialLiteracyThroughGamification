@@ -36,9 +36,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <h1>
-            <span className="purple">Win</span>Tech
-          </h1>
+          <h1><span className="purple">Win</span>Tech</h1>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -94,27 +92,10 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="./Lobby"
+                to="/"
                 onClick={() => updateExpanded(false)}
               >
-                <span className="purple">
-                  {" "}
-                  <b>PLAY!</b>{" "}
-                </span>
-              </Nav.Link>
-            </Nav.Item>
-
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/simulation"
-                onClick={() => updateExpanded(false)}
-              >
-                <span className="purple">
-                  {" "}
-                  <b>SIMULATION </b>{" "}
-                </span>
+                <span className="purple"> <b>PLAY!</b> </span>
               </Nav.Link>
             </Nav.Item>
           </Nav>
